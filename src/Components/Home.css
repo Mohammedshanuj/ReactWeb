@@ -1,0 +1,110 @@
+.home{
+    text-align: center;
+    color: wheat;
+    
+}
+.contain{
+    
+    height: 500px;
+    width: 100%;
+    background-image: url(Home.jpg);
+    display: flex;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.txt{
+    padding-top: 30px;
+}
+.line{
+    height: 50px;
+    padding-top: 30px;
+}
+.marg{
+    margin-top: 70px;
+}
+#slideshow {
+    overflow: hidden;
+    height: 410px;
+    width: 428px;
+    margin-top: 80px;
+    margin-left: 150px;
+
+
+  }
+
+  /* Style each of the sides
+  with a fixed width and height */
+
+  .slide {
+    float: none;
+    height: 410px;
+    width: 428px;
+  }
+
+  /* Add animation to the slides */
+
+  .slide-wrapper {
+
+    /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(728px * 4);
+
+    /* Specify the animation with the
+    duration and speed */
+    animation: slide 10s ease infinite;
+    
+  }
+
+  /* Set the background color
+  of each of the slides */
+
+  .slide:nth-child(1) {
+    background: red;
+  }
+
+  .slide:nth-child(2) {
+    background: green;
+  }
+
+  .slide:nth-child(3) {
+    background: blue;
+  }
+
+
+  /* Define the animation
+  for the slideshow */
+
+  @keyframes slide {
+
+    /* Calculate the margin-left for
+    each of the slides */
+    20% {
+      margin-left: 0px;
+    }
+
+    40% {
+      margin-left: calc(-428px * 1);
+    }
+
+    60% {
+      margin-left: calc(-428px * 2);
+    }
+
+    80% {
+      margin-left: calc(-428px * 3);
+    }
+  }
+.slide-number{
+    color:rgb(64, 81, 171);
+    font-size: 2rem;
+}
+.ppp{
+    color: white;
+    font-size: 1.3rem;
+}
+.srn{
+    max-width:100%;
+    display: flex;
+}
