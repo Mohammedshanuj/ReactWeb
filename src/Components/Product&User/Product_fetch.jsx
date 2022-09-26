@@ -3,9 +3,10 @@
 import React, { useEffect, useState } from 'react'
 
 
-const Product_fetch = (propdata) => (Component) => {
-    console.log("comp is")
-    console.log(propdata.type);
+const Product_fetch = (propdata) => (Component,newData) => {
+    console.log("propdata is")
+    console.log(propdata);
+    console.log(newData);
 
 
 

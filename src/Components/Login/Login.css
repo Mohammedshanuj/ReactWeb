@@ -93,7 +93,7 @@
 .logint {
 	width: 320px;
 	padding: 30px;
-	padding-top: 156px;
+	padding-top: 16px;
 }
 
 .login__field {
@@ -184,4 +184,5 @@
 }
 .logtxt{
 	padding-top: 40px;
+	
 }

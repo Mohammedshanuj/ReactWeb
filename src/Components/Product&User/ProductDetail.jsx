@@ -1,6 +1,6 @@
 import React from 'react'
 import { useLocation, useNavigate, useParams } from 'react-router-dom'
-import './Home.css'
+import '../Route _pages/Home.css'
 import Product_fetch from './Product_fetch';
 import './Producti.css'
 

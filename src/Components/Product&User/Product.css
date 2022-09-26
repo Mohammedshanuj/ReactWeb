@@ -1,21 +1,21 @@
 .product-image{
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
   }
   .product_container{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
   }
-  .prowrap{
+  .product-wrapper{
     margin: 25px;
-    width: 100%;
+    width: 20%;
     border: solid;
   }
   .containi{
     
     
-    background-image: url(Home.jpg);
+    background-image: url(../Home.jpg);
     height: 100%;
     background-attachment: fixed;
     background-repeat: repeat;

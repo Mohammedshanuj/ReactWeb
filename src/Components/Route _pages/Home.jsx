@@ -24,7 +24,7 @@ function Home() {
           <h1  className="slide-number">
             We’re Passionate!
           </h1>
-          <p className='ppp' >We craft exceptional solutions with aesthetic and interactive front
+          <p className='pppp' >We craft exceptional solutions with aesthetic and interactive front
             end and powerful backend that makes you unbeatable! Let's work together to elevate your business!</p>
         </div>
         <div className="slide">

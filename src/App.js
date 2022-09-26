@@ -1,25 +1,29 @@
 import React, { Component } from 'react';
 import {Navigate, Outlet, Route, Routes}  from 'react-router-dom';
 import './App.css'
-import './Components/Home.css'
+import './Components/Route _pages/Home.css'
 
-import Home from './Components/Home';
-import About from './Components/About';
-import Contact from './Components/Contact';
-import Error from './Components/Error';
+import Home from './Components/Route _pages/Home';
+import About from './Components/Route _pages/About';
+import Contact from './Components/Route _pages/Contact';
+import Error from './Components/Route _pages/Error';
 
-import Navbar from './Components/Navbar';
-import Login from './Components/Login';
-import Register from './Components/Register';
-import Products from './Components/Products';
-import Footer from './Components/Footer';
-import Cart from './Components/Cart'
-import ProductDetail from './Components/ProductDetail';
-import Slide from './Components/Slide';
-import Guest from './Components/Guest';
-import Users from './Components/Users';
-import Product_list from './Components/Product_list';
-import Userlist from './Components/Userlist';
+import Navbar from './Components/Headers/Navbar';
+import Loginn from './Components/Login/Loginn';
+import Register from './Components/Register/Register';
+import Products from './Components/Product&User/Products';
+import Footer from './Components/Footer/Footer';
+import Cart from './Components/Route _pages/Cart'
+import ProductDetail from './Components/Product&User/ProductDetail';
+import Slide from './Components/Headers/Slide';
+import Guest from './Components/Route _pages/Guest';
+import Users from './Components/Product&User/Users';
+import Product_list from './Components/Product&User/Product_list';
+import Userlist from './Components/Product&User/Userlist';
+import { Input } from '@mui/material';
+import FormInput from './FormInput';
+import RegwithReducer from './Components/Register/RegwithReducer';
+//import BasicPopover from "./Components/Pop";
 
 
 const Profile = () => <h1>Profile</h1>;
@@ -54,15 +58,19 @@ class App extends Component {
             
              
 
-             <Route  path="/login" element={<Login/>}>
+             <Route  path="/login" element={<Loginn/>}>
               <Route  path="guest" element={<div className='contain'><h1>This is guest user</h1> </div>}/>
               </Route>
              
              <Route path="/Cart" element={<Cart/>}/>
+             
              <Route path="/register" element={<Register/>}/>
+             <Route path="/registerr" element={<RegwithReducer/>}/>
+             
              <Route path="/brands" element={<div className='contain'><h1 className='txt'>Brandsssss</h1> </div>}/>
              <Route path="/products" element={<Product_list/>}/>
              <Route path="/users" element={<Userlist/>}/>
+             <Route path="/input" element={<FormInput/>}/>
              
             <Route element={<Error/>}/>
            </Routes>

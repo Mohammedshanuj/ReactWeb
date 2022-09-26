@@ -7,7 +7,7 @@
     
     height: 500px;
     width: 100%;
-    background-image: url(Home.jpg);
+    background-image: url(../Home.jpg);
     display: flex;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -61,15 +61,15 @@
   of each of the slides */
 
   .slide:nth-child(1) {
-    background: red;
+    background: orange;
   }
 
   .slide:nth-child(2) {
-    background: green;
+    background: white;
   }
 
   .slide:nth-child(3) {
-    background: blue;
+    background: green;
   }
 
 
@@ -107,4 +107,8 @@
 .srn{
     max-width:100%;
     display: flex;
+}
+.pppp{
+  color: blue;
+  font-size: 1.3rem;
 }
